@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 
 public partial class MAVLink
 {
-    public const string MAVLINK_BUILD_DATE = "Fri Dec 02 2016";
+    public const string MAVLINK_BUILD_DATE = "Sat Dec 17 2016";
     public const string MAVLINK_WIRE_PROTOCOL_VERSION = "2.0";
     public const int MAVLINK_MAX_PAYLOAD_LEN = 255;
 
@@ -741,6 +741,8 @@ ADAP_TUNING = 11010,
         USER_4=31013, 
     	///<summary> User defined command. Ground Station will not show the Vehicle as flying through this item. Example: MAV_CMD_DO_SET_PARAMETER item. |User defined| User defined| User defined| User defined| User defined| User defined| User defined|  </summary>
         USER_5=31014, 
+    	///<summary> Navigate TAXI |Taxi speed (m/s)| Hold time (s)| Brake (0 - OFF, 1 - ON)| | Latitude| Longitude| |  </summary>
+        TAXI=31500, 
     	///<summary> A system wide power-off event has been initiated. |Empty| Empty| Empty| Empty| Empty| Empty| Empty|  </summary>
         POWER_OFF_INITIATED=42000, 
     	///<summary> FLY button has been clicked. |Empty| Empty| Empty| Empty| Empty| Empty| Empty|  </summary>

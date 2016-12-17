@@ -1653,6 +1653,18 @@
                   <param index="6">User defined</param>
                   <param index="7">User defined</param>
               </entry>
+
+              <entry value="31500" name="MAV_CMD_NAV_TAXI">
+                  <description>Navigate TAXI</description>
+                  <param index="1">Taxi speed (m/s)</param>
+                  <param index="2">Hold time (s)</param>
+                  <param index="3">Brake (0 - OFF, 1 - ON)</param>
+                  <param index="4"></param>
+                  <param index="5">Latitude</param>
+                  <param index="6">Longitude</param>
+                  <param index="7"></param>
+              </entry>
+
               <!-- END of user range (31000 to 31999) -->
           </enum>
           <enum name="MAV_DATA_STREAM">
